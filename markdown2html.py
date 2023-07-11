@@ -1,9 +1,13 @@
 #!/usr/bin/python3
 
+"""
+funtion that converts md files to html
+"""
 import sys
 import os.path
 import re
 import hashlib
+import markdown
 
 
 def convert_heading(line):
@@ -96,10 +100,17 @@ def markdown2html(in_file, out_file):
         sys.exit(1)
 
     with open(in_file, 'r') as md_file:
-        markdown_lines = md_file.readlines()
+        markdown_content = md_file.read()
+
+    html_content = markdown.markdown(
+        markdown_content,
+        extensions=['extra']
+    )
+
+    html_content = html_content.split('\n')
 
     html_lines = []
-    for line in markdown_lines:
+    for line in html_content:
         line = convert_heading(line)
         line = convert_unordered_list(line)
         line = convert_ordered_list(line)
