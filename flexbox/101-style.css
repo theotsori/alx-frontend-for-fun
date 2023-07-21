@@ -9,43 +9,48 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 50px;
+  align-items: center;
 }
 
 .box {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
 }
 
 .box1 {
-  width: 110px;
-  height: 90px;
+  width: 120px;
+  height: 80px;
   background-color: #ff9a8b;
+  font-size: 1rem;
 }
 
 .box2 {
-  width: 130px;
+  width: 150px;
   height: 110px;
   background-color: #d4a6f3;
+  font-size: 2rem;
 }
 
 .box3 {
-  width: 150px;
-  height: 150px;
+  width: 210px;
+  height: 170px;
   background-color: #73c5ff;
+  font-size: 4rem;
 }
 
 .box4 {
-  width: 130px;
+  width: 150px;
   height: 110px;
   background-color: #85e89d;
+  font-size: 2rem;
 }
 
 .box5 {
-  width: 110px;
-  height: 90px;
+  width: 120px;
+  height: 80px;
   background-color: #f2da77;
+  font-size: 1rem;
 }
