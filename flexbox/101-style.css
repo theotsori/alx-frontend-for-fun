@@ -1,0 +1,51 @@
+/*** Flex Boxes ***/
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.box1 {
+  width: 110px;
+  height: 90px;
+  background-color: #ff9a8b;
+}
+
+.box2 {
+  width: 130px;
+  height: 110px;
+  background-color: #d4a6f3;
+}
+
+.box3 {
+  width: 150px;
+  height: 150px;
+  background-color: #73c5ff;
+}
+
+.box4 {
+  width: 130px;
+  height: 110px;
+  background-color: #85e89d;
+}
+
+.box5 {
+  width: 110px;
+  height: 90px;
+  background-color: #f2da77;
+}
